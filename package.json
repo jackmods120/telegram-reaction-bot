@@ -1,0 +1,6 @@
+{
+  "name": "telegram-reaction-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Telegram reaction bot deployed on Vercel"
+}
