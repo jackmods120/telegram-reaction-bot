@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+body { background: #08080F; color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; -webkit-tap-highlight-color: transparent; }
+
+.glass { background: linear-gradient(135deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02)); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.08); }
+.glass-blue   { background: rgba(59,130,246,0.12);  border: 1px solid rgba(59,130,246,0.25); }
+.glass-purple { background: rgba(139,92,246,0.12);  border: 1px solid rgba(139,92,246,0.25); }
+.glass-green  { background: rgba(34,197,94,0.12);   border: 1px solid rgba(34,197,94,0.25); }
+.glass-red    { background: rgba(239,68,68,0.12);   border: 1px solid rgba(239,68,68,0.25); }
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+@keyframes ticker { from { transform: translateX(100vw); } to { transform: translateX(-100%); } }
+.animate-ticker { animation: ticker 22s linear infinite; white-space: nowrap; display: inline-block; }
+
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+.animate-float { animation: float 3s ease-in-out infinite; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+.animate-spin { animation: spin .7s linear infinite; }
+
+.gold-border { border: 1px solid #F59E0B55; background: rgba(245,158,11,0.05); }
