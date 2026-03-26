@@ -1,6 +1,24 @@
 {
-  "name": "telegram-reaction-bot",
+  "name": "reaction-bot-maker",
   "version": "1.0.0",
   "private": true,
-  "description": "Telegram reaction bot deployed on Vercel"
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "firebase": "^10.12.2",
+    "firebase-admin": "^12.2.0",
+    "recharts": "^2.12.7",
+    "lucide-react": "^0.383.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8",
+    "autoprefixer": "^10"
+  }
 }
